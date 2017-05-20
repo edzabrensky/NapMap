@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Theta Tau Sigma Delta Chapter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script>
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+		<script>
+			$(function() {
+				$("#footer-loc").load("footer.html");
+			});
+		</script>
+	</head>
+	
+	
+	<body class="landing">
+		
+	
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt" style="white-space: nowrap;overflow: hidden;font-size: 2.5vw; font-size: 2.5vmin;">
+						<h1><a href="index.html">NapMap</a></h1>
+					</header>
+					
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>NapMap</h2>
+							<p>Your nap begins here</p>
+							
+							
+							<!-- Login -->
+							<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="button special">Login</button>
+							
+							<div id="id01" class="modal">
+							  
+							  <form name="loginform" class="modal-content animate" onSubmit="return validateForm();" method="get" action="indexLogged.html">
+							    <div class="imgcontainer">
+							      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+							      <img src="images/logo2017.png" alt="Avatar" class="avatar">
+							    </div>
+							
+							    <div class="container">
+							      
+							      <input type="text" placeholder="Enter Username" name="uname" required>
+								  
+							      
+							      <input type="password" placeholder="Enter Password" name="psw" required>
+							        
+							      <button type="submit" class="button special">Login</button>
+							      <button type="button" onclick="document.getElementById('id01').style.display='none'"   class="button special">Cancel</button>
+				
+							    </div>
+							
+							  </form>
+							</div>
+							
+							<!-- login script-->
+							<script>
+						
+						
+							var res = encodeURI(location.href);
+							
+							function validateForm() {
+						        var un = document.loginform.uname.value;
+						        var pw = document.loginform.psw.value;
+						        var username = "active"; 
+						        var password = "handt";
+						        if ((un == username) && (pw == password)) {
+						            return true;
+						        }
+						        
+						        else if((un == "richel") && (pw == "thisisaverylongpassword"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "aditya") && (pw == "3eulj5h"))
+						        {
+						        	return true;
+						        }
+						        
+						        // else if((un == "alex") && (pw == "6cfkzfi"))
+						        // {
+						        // 	return true;
+						        // }
+						        
+						        else if((un == "allison") && (pw == "bubxs1u"))
+						        {
+						        	return true;
+						        }
+						        
+						        // else if((un == "branda") && (pw == "08me7gy"))
+						        // {
+						        // 	return true;
+						        // }
+						        
+						        
+						        
+						        else if((un == "hans") && (pw == "16cwykv"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "ishita") && (pw == "jfjku8m"))
+						        {
+						        	return true;
+						        }
+						        
+						        // else if((un == "jasmit") && (pw == "pu32vz6"))
+						        // {
+						        // 	return true;
+						        // }
+						        
+						        else if((un == "john") && (pw == "uokj56e"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "kevin") && (pw == "m1r9823"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "nivedha") && (pw == "w0qrtbl"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "paul") && (pw == "c5mff2c"))
+						        {
+						        	return true;
+						        }
+						        
+						        else if((un == "thomas") && (pw == "vlwma7h"))
+						        {
+						        	return true;
+						        }
+						        
+						        else {
+						            alert ("Login was unsuccessful, please check your username and password");
+						            return false;
+						        }
+  							}
+							
+							
+							
+							// Get the modal
+							var modal = document.getElementById('id01');
+							
+							// When the user clicks anywhere outside of the modal, close it
+							window.onclick = function(event) {
+							    if (event.target == modal) {
+							        modal.style.display = "none";
+							    }
+							}
+							</script>
+							
+							
+							
+							
+							
+							
+							
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+						
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>About NapMap</h2>
+								<p>Insert napmap stuff here</p>
+							</header>
+							<ul class="icons major">
+								<li><a href="#two" class="more scrolly"><span class="icon fa-handshake-o major style1"><span class="label"></span></span></a></li>
+								<li><a href="#three" class="more scrolly"><span class="icon fa-black-tie major style2"><span class="label">Ipsum</span></span></a></li>
+								<li><a href="#four" class="more scrolly"><span class="icon fa-recycle major style3"><span class="label">Dolor</span></span></a></li>
+							</ul>
+						</div>
+						
+					</section>
+					
+
+				<!-- Two -->
+					<section class="wrapper alt style2">
+						<section class="spotlight" id="two" >
+							<div class="image" width="300"><img src="images/brotherhood.jpg" alt="" /></div><div class="content">
+								<h2>Brotherhood</h2>
+								<p>We develop lifelong bonds of fraternal fellowship among our members through unique and memorable experiences.
+									 We stay supportive and honest with each other to promote a brotherhood that goes beyond school and work.</p>
+							</div>
+						</section>
+						<section class="spotlight" section id="three">
+							<div class="image"><img src="images/professionalism.jpg" alt="" /></div><div class="content">
+								<h2>Professionalism</h2>
+								<p>We aim to build  and refine the professional abilities of our members so that they succeed in their careers and endeavors.
+									 We emphasize professional characteristics such as communication, presentation, and innovation.</p>
+							</div>
+						</section>
+						<section class="spotlight" section id="four">
+							<div class="image"><img src="images/service.jpg" alt="" /></div><div class="content">
+								<h2>Service</h2>
+								<p>We believe that it is important to excel in our respective fields as well as give back to the community.
+									 Our members strive to lead by example and stay true through volunteering, work, and contribution to the school and community.</p>
+							</div>
+						</section>
+		
+
+				<!-- Footer -->
+			<div id="footer-loc"></div>
+
+			
+			
+			
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+
+	
+
+</html>
